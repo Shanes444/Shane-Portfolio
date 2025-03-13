@@ -1,0 +1,6 @@
+In C, the fork() api works by doing a system call. This system call creates a child process from the parent
+process(the original process) This child process is a copy of the parent process, and runs through the code
+at the same time as the parent process. This essentially means that all of the code after the fork is being
+executed twice (or more times if there are multiple forks). The wait() api does a wait system call for the
+process. This means that the process will now wait for all of its children to finish executing before it
+continues. Execlp() works by accessing the terminal and doing the given command. the first argument is the file path for the command, and the rest of the arguments make up the command.

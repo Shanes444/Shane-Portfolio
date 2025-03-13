@@ -1,0 +1,4 @@
+The execvp() api works by accessing the terminal so that it can enter commands. The first argument is the file
+path for the command that is going to be called. The next argument is an array of strings, or char* as they 
+are called in C. These char* make up the command that is going to be entered into the terminal. For example,
+in my file execvp.c, the command being called is ls, so the array has "ls", and NULL.
